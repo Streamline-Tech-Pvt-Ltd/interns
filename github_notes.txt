@@ -1,0 +1,79 @@
+=================================Git Hub====================
+Git:- 
+    It is a version control system.
+    It is a tool that helps to tarck changes in code.
+        popular
+        open-source
+        fast & scalable
+    purpose:-
+        to track the history
+        collaborate
+
+Git Hub:-
+    it is a website that allow developer to store and manage their code using git.
+
+# how we can check git version?
+ $ git --version   &   $ git -v
+
+# what is the use of clear command?
+  to clear all previous work
+        $ clear
+
+# how we can go inside current working directory?
+ $ pwd 
+
+ # git configuration:-
+    git configuration means we can tell to git in which account we want change.
+
+    # for username:-
+        $ git config --global user.name "your user_name"
+    
+    # for email :- 
+        $ git config --global user.email "your email"
+    
+    # to view the configuration list:-
+        $ git config --list
+
+
+* clone & Status:-
+
+clone:- 
+    To create Duplicate.
+    clonning a repository on your local machine.
+    It means download the another developer project on your system.
+
+    $ git clone <url of repository>
+
+status:-
+    To display the status of your code .
+    It means it shows the file/code is save or not.
+        $ git status
+
+    Types:- 
+        1. Untracked
+        2. Modified
+        3. Staged
+        4. unmodified
+
+    1. Untracked:- 
+        It is a new file that git does not yet track.
+    
+    2. Modified:- 
+        in this file user can make changes.
+        present file is change
+    
+    3.Staged:-
+        Staged means file is ready to commit.
+
+    4. unmodified:-
+        The file is unchangable.
+
+
+
+# Add and commit:- 
+
+Add:-
+    adds new or unchanged file in your working dirctory to the git stagging area.
+
+    $ git add <file name>
+    $ git add .
