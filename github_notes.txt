@@ -77,3 +77,9 @@ Add:-
 
     $ git add <file name>
     $ git add .
+
+Commit:- 
+    It is the record of chnaged.
+    we can send a message with commit
+
+    $ git commit -m "here we can write what is in this file"
