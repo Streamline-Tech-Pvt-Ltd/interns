@@ -81,3 +81,166 @@ GenAI can automatically generate reports and summaries.
 Example report:
 “Sales increased in 2004 due to higher demand in the European market. However, sales declined in 2005 due to reduced customer orders.”
 This saves hours of manual reporting.
+
+
+
+Large Language Models
+
+Large Language Models (LLMs) are advanced Artificial Intelligence models trained on very large amounts of text data to understand, process, and generate human-like language.
+They use deep learning techniques, especially transformer neural networks, to predict and generate words in a sentence.
+
+In simple terms, LLMs can read, understand, and generate text similar to humans.
+
+Examples of LLMs include:
+
+ChatGPT
+
+Google Gemini
+
+Claude
+
+GitHub Copilot
+
+2. Key Characteristics of LLMs
+1. Large Training Data
+
+LLMs are trained on billions of words from sources like books, articles, websites, and research papers.
+
+2. Deep Learning Architecture
+
+They use Transformer architecture, which helps the model understand the relationship between words in a sentence.
+
+3. Context Understanding
+
+LLMs understand the context of a conversation, which allows them to generate meaningful responses.
+
+Example:
+User: What is the capital of France?
+LLM: Paris
+
+4. Text Generation
+
+LLMs can generate:
+
+Articles
+
+Summaries
+
+Emails
+
+Reports
+
+Code
+
+3. How LLMs Work
+Step 1: Data Collection
+
+Large text datasets are collected from:
+
+Books
+
+Websites
+
+Research papers
+
+Articles
+
+Step 2: Model Training
+
+The model learns patterns in language using machine learning algorithms.
+
+Step 3: Pattern Learning
+
+The model learns:
+
+Grammar
+
+Word relationships
+
+Sentence structure
+
+Step 4: Text Generation
+
+When a user gives a prompt, the model predicts the next most likely words to generate a response.
+
+Example:
+Prompt → “Data analysis is important because…”
+LLM → generates a complete explanation.
+
+4. Basic Flow of LLM
+User Prompt
+     ↓
+Tokenization (text converted into tokens)
+     ↓
+LLM Processing (Transformer Model)
+     ↓
+Prediction of next words
+     ↓
+Generated Response
+5. Applications of LLMs
+1. Chatbots
+
+Used for conversational AI.
+
+Example: customer support chatbots.
+
+2. Content Generation
+
+LLMs generate:
+
+Blog posts
+
+Reports
+
+Marketing content
+
+3. Code Generation
+
+Developers use LLMs to generate programming code.
+
+4. Data Analysis
+
+LLMs help data analysts:
+
+Write SQL queries
+
+Explain datasets
+
+Generate insights
+
+5. Language Translation
+
+Translate text between different languages.
+
+6. Advantages of LLMs
+
+Fast text generation
+
+Natural language understanding
+
+Automation of writing tasks
+
+Supports multiple languages
+
+Improves productivity
+
+7. Limitations of LLMs
+
+May generate incorrect information
+
+Requires large computing power
+
+Bias in training data
+
+Cannot fully understand real-world context
+
+8. Simple Example
+
+User Prompt:
+
+“Explain profit margin.”
+
+LLM Response:
+
+Profit margin is the percentage of profit a company earns after deducting costs from revenue.
+
