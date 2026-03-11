@@ -82,7 +82,7 @@ Example report:
 “Sales increased in 2004 due to higher demand in the European market. However, sales declined in 2005 due to reduced customer orders.”
 This saves hours of manual reporting.
 
-
+9/3/2026
 
 Large Language Models
 
@@ -199,4 +199,8 @@ User Prompt:
 LLM Response:
 Profit margin is the percentage of profit a company earns after deducting costs from revenue.
 
+10/03/2026
 https://youtu.be/0ALxBoHOQAw?si=MfGLNu4342dM5UkK
+
+11/03/2026
+watched new vid + wrote 
