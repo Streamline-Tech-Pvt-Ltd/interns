@@ -207,3 +207,45 @@ watched new vid + wrote
 
 12/03/2026
 Introduction to langChain by CampusX YT
+
+13/03/2026
+Introduction to LangChain
+
+1. What is LangChain?
+
+LangChain is an open-source framework used to build applications powered by Large Language Models (LLMs).
+It helps developers connect LLMs with data sources, tools, APIs, and workflows to create intelligent AI applications.
+It allows developers to combine multiple steps 
+such as prompting, data retrieval, reasoning, and response generation into a single pipeline called a chain.
+
+2. Purpose of LangChain
+
+The main purpose of LangChain is to simplify the development of applications that use LLMs.
+Large language models like GPT-4 can generate text, but they cannot directly access external data or tools.
+LangChain solves this problem by allowing LLMs to interact with databases, documents, APIs, and external services.
+
+3. How LangChain Works (Basic Flow)
+
+User Input → LLM → LangChain Processing → External Data/Tools → Final Response
+
+Example:
+A user asks a chatbot about sales data. 
+LangChain retrieves the data from a database, processes it with the LLM, 
+and returns a meaningful answer.
+
+4. Key Features of LangChain
+
+Prompt Management – Helps design and reuse prompt templates for LLM interactions.
+Chains – Combines multiple steps where the output of one step becomes the input of another.
+Memory – Stores previous conversation data so the system remembers context.
+Agents – Enables AI models to decide which tool or action to use automatically.
+Integration – Connects LLMs with databases, APIs, and other software tools.
+
+5. Components of LangChain
+
+Important components include:
+Models – Language models used to generate responses.
+Prompt Templates – Structured prompts used to guide the model.
+Chains – A sequence of tasks executed step-by-step.
+Memory – Stores conversation history.
+gents and Tools – Allow AI to interact with external systems.
