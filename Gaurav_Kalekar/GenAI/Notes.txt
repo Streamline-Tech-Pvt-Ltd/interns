@@ -82,7 +82,7 @@ Example report:
 “Sales increased in 2004 due to higher demand in the European market. However, sales declined in 2005 due to reduced customer orders.”
 This saves hours of manual reporting.
 
-
+9/3/2026
 
 Large Language Models
 
@@ -92,26 +92,20 @@ They use deep learning techniques, especially transformer neural networks, to pr
 In simple terms, LLMs can read, understand, and generate text similar to humans.
 
 Examples of LLMs include:
-
 ChatGPT
-
 Google Gemini
-
 Claude
-
 GitHub Copilot
 
 2. Key Characteristics of LLMs
-1. Large Training Data
 
+1. Large Training Data
 LLMs are trained on billions of words from sources like books, articles, websites, and research papers.
 
 2. Deep Learning Architecture
-
 They use Transformer architecture, which helps the model understand the relationship between words in a sentence.
 
 3. Context Understanding
-
 LLMs understand the context of a conversation, which allows them to generate meaningful responses.
 
 Example:
@@ -119,48 +113,33 @@ User: What is the capital of France?
 LLM: Paris
 
 4. Text Generation
-
 LLMs can generate:
-
 Articles
-
 Summaries
-
 Emails
-
 Reports
-
 Code
 
 3. How LLMs Work
+
 Step 1: Data Collection
-
 Large text datasets are collected from:
-
 Books
-
 Websites
-
 Research papers
-
 Articles
 
 Step 2: Model Training
-
 The model learns patterns in language using machine learning algorithms.
 
 Step 3: Pattern Learning
-
 The model learns:
 
 Grammar
-
 Word relationships
-
 Sentence structure
 
 Step 4: Text Generation
-
 When a user gives a prompt, the model predicts the next most likely words to generate a response.
 
 Example:
@@ -178,69 +157,95 @@ Prediction of next words
      ↓
 Generated Response
 5. Applications of LLMs
+
 1. Chatbots
-
 Used for conversational AI.
-
 Example: customer support chatbots.
 
 2. Content Generation
-
 LLMs generate:
-
 Blog posts
-
 Reports
-
 Marketing content
 
 3. Code Generation
-
 Developers use LLMs to generate programming code.
 
 4. Data Analysis
-
 LLMs help data analysts:
-
 Write SQL queries
-
 Explain datasets
-
 Generate insights
 
 5. Language Translation
-
 Translate text between different languages.
 
 6. Advantages of LLMs
-
 Fast text generation
-
 Natural language understanding
-
 Automation of writing tasks
-
 Supports multiple languages
-
 Improves productivity
 
 7. Limitations of LLMs
-
 May generate incorrect information
-
 Requires large computing power
-
 Bias in training data
-
 Cannot fully understand real-world context
 
 8. Simple Example
-
 User Prompt:
-
 “Explain profit margin.”
-
 LLM Response:
-
 Profit margin is the percentage of profit a company earns after deducting costs from revenue.
 
+10/03/2026
+https://youtu.be/0ALxBoHOQAw?si=MfGLNu4342dM5UkK
+
+11/03/2026
+watched new vid + wrote 
+
+12/03/2026
+Introduction to langChain by CampusX YT
+
+13/03/2026
+Introduction to LangChain
+
+1. What is LangChain?
+
+LangChain is an open-source framework used to build applications powered by Large Language Models (LLMs).
+It helps developers connect LLMs with data sources, tools, APIs, and workflows to create intelligent AI applications.
+It allows developers to combine multiple steps 
+such as prompting, data retrieval, reasoning, and response generation into a single pipeline called a chain.
+
+2. Purpose of LangChain
+
+The main purpose of LangChain is to simplify the development of applications that use LLMs.
+Large language models like GPT-4 can generate text, but they cannot directly access external data or tools.
+LangChain solves this problem by allowing LLMs to interact with databases, documents, APIs, and external services.
+
+3. How LangChain Works (Basic Flow)
+
+User Input → LLM → LangChain Processing → External Data/Tools → Final Response
+
+Example:
+A user asks a chatbot about sales data. 
+LangChain retrieves the data from a database, processes it with the LLM, 
+and returns a meaningful answer.
+
+4. Key Features of LangChain
+
+Prompt Management – Helps design and reuse prompt templates for LLM interactions.
+Chains – Combines multiple steps where the output of one step becomes the input of another.
+Memory – Stores previous conversation data so the system remembers context.
+Agents – Enables AI models to decide which tool or action to use automatically.
+Integration – Connects LLMs with databases, APIs, and other software tools.
+
+5. Components of LangChain
+
+Important components include:
+Models – Language models used to generate responses.
+Prompt Templates – Structured prompts used to guide the model.
+Chains – A sequence of tasks executed step-by-step.
+Memory – Stores conversation history.
+gents and Tools – Allow AI to interact with external systems.
