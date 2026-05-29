@@ -1,0 +1,134 @@
+.hero-section{
+  background-image: url('C:\Users\Admin\Desktop\Streamline tech\interns\Shrutika_Pawar\Nashik_raect_project\nashik-mahanagarpalica-app\src\Images\bg.jpg');
+  height: 110vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+/* Overlay */
+.hero-section::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 27, 68, 0.6);
+}
+
+/* Center Text */
+.main-text{
+  position: relative;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-text{
+  color: rgb(223, 223, 223);
+  font-size: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.custom-navbar{
+  background-color: #001B44;
+  padding: 12px;
+}
+
+.custom-navbar .navbar-brand{
+  color: white !important;
+  font-weight: bold;
+}
+
+.custom-navbar .nav-link{
+  color: white !important;
+  margin-left: 15px;
+}
+
+.portal-btn{
+  background-color: #FF7A00 !important;
+  color: white !important;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.portal-btn:hover{
+  background-color: #e66d00 !important;
+}
+
+.language-btn{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: #FF7A00;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.language-btn:hover{
+  background-color: #e66d00;
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.info-card{
+  width: 220px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.info-card h1{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.info-card p{
+  font-size: 18px;
+}
+
+/* Colors */
+
+.dark-card{
+  background-color: #001B44;
+  color: white;
+}
+
+.blue-card{
+  background-color: #007BFF;
+  color: white;
+}
+
+.light-card{
+  background-color: #F4F4F4;
+  color: #001B44;
+}
