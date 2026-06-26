@@ -1068,3 +1068,487 @@ h2 {
     padding: 36px 20px 24px;
   }
 }
+
+
+/* ===== WELCOME SCREEN ONLY ===== */
+.welcome-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+.welcome-header {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px 24px;
+}
+.welcome-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo-box-blue {
+  width: 32px;
+  height: 32px;
+  background: #2563eb;
+  border-radius: 4px;
+}
+.welcome-logo span {
+  font-weight: 600;
+  color: #1f2937;
+}
+.welcome-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 16px;
+  text-align: center;
+}
+.welcome-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+.welcome-subtitle {
+  color: #4b5563;
+  margin-bottom: 16px;
+  max-width: 600px;
+}
+.badge-secure {
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+.login-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 48px;
+}
+.login-card {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+  text-align: left;
+}
+.card-icon {
+  width: 48px;
+  height: 48px;
+  background: #eff6ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.login-card h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+.login-card p {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.card-link {
+  color: #2563eb;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+}
+.card-link:hover {
+  text-decoration: underline;
+}
+.support-text {
+  color: #6b7280;
+  font-size: 14px;
+}
+.support-text a {
+  color: #2563eb;
+  text-decoration: none;
+}
+.footer-copy {
+  color: #9ca3af;
+  font-size: 12px;
+  margin-top: 32px;
+}
+
+
+/* ===== LOGIN PAGE ONLY ===== */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.login-left {
+  display: none;
+  width: 40%; /* Blue part kam */
+  background: #1e3a8a;
+  color: white;
+  padding: 50px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+  .login-left { display: flex; }
+}
+
+.portal-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 64px;
+}
+
+.logo-white {
+  width: 32px;
+  height: 32px;
+  background: white;
+  border-radius: 4px;
+}
+
+.portal-brand span {
+  font-weight: 600;
+}
+
+.login-left h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.login-left > div > p {
+  color: #bfdbfe;
+  line-height: 1.6;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: auto;
+}
+
+.stat-card-dark {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.stat-card-dark:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card-dark h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 4px 0;
+  line-height: 1;
+}
+
+.stat-card-dark p {
+  font-size: 13px;
+  color: #bfdbfe;
+  margin: 0;
+  font-weight: 500;
+}
+
+.login-right {
+  width: 100%;
+  background: white;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .login-right {
+    width: 70%; /* White part zyada */
+    padding: 48px 80px;
+  }
+}
+
+.login-form-box {
+  width: 100%;
+  max-width: 480px; /* Real look ke liye max-width wapas */
+  margin: 0 auto; /* Center me rakhega */
+}
+
+.login-form-box h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.form-subtitle {
+  color: #6b7280;
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+
+.login-toggle {
+  display: flex;
+  background: #f3f4f6;
+  padding: 4px;
+  border-radius: 8px;
+  margin-bottom: 28px;
+}
+
+.login-toggle button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.login-toggle button.active {
+  background: white;
+  color: #111827;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.login-form-box label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  top: 15px;
+  color: #9ca3af;
+  width: 18px;
+  height: 18px;
+}
+
+.input-group input {
+  width: 100%;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px 44px 12px 44px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
+}
+
+.eye-btn {
+  position: absolute;
+  right: 14px;
+  top: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9ca3af;
+  padding: 0;
+}
+
+.eye-btn:hover {
+  color: #6b7280;
+}
+
+.forgot-link {
+  color: #192e48;
+  font-size: 14px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 28px;
+  display: block;
+  transition: color 0.2s;
+}
+
+.forgot-link:hover {
+  color: #192e48;
+  text-decoration: underline;
+}
+
+.btn-signin {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: all 0.2s;
+}
+
+.btn-signin:hover {
+  background: #1d4ed8;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.25);
+  transform: translateY(-1px);
+}
+
+.btn-signin:active {
+  transform: translateY(0);
+}
+
+.btn-signin:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.otp-title {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.mobile-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.mobile-row select {
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 15px;
+  background: white;
+  transition: all 0.2s;
+}
+
+.mobile-row select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
+}
+
+.mobile-row input {
+  flex: 1;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+
+.mobile-row input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
+}
+
+.otp-input {
+  width: 100%;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 15px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+
+.otp-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
+}
+
+.btn-verify {
+  width: 100%;
+  background: #16a34a;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: all 0.2s;
+}
+
+.btn-verify:hover {
+  background: #15803d;
+  box-shadow: 0 4px 6px rgba(22, 163, 74, 0.25);
+  transform: translateY(-1px);
+}
+
+.btn-verify:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.back-link {
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: #111827;/* Sirf School Login ke cards upar karne ke liye */
+.login-page .school-stats-row-two {
+  margin-top: -20px;
+}
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+}
+/* School Login - Cards thode upar */
+.login-page:has(.login-toggle button:first-child.active) .stats-grid {
+  margin-top: -20px;
+}
+
