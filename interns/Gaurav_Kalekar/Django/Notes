@@ -1,0 +1,7 @@
+Django
+
+Django is a high-level Python web framework used to build websites and web applications quickly and securely.
+
+Before frameworks, developers had to write everything from scratch (login system, database connection, security etc.).
+
+Django provides ready-made components, so development becomes fast and secure.
