@@ -1,121 +1,146 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import Card from './card'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const jobs = [
+    {
+      id: 1,
+      company: "Amazon",
+      logo: "data:image/png;base64,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",
+      posted: "5 days ago",
+      title: "Senior UI/UX Designer",
+      type: "Part-Time",
+      level: "Senior Level",
+      salary: "$120/hr",
+      location: "Mumbai, India"
+    },
+
+    {
+      id: 2,
+      company: "Google",
+      logo: "data:image/png;base64,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",
+      posted: "2 days ago",
+      title: "Frontend Developer",
+      type: "Full-Time",
+      level: "Mid Level",
+      salary: "$110/hr",
+      location: "Bangalore, India"
+    },
+
+    {
+      id: 3,
+      company: "Microsoft",
+      logo: "M",
+      posted: "1 day ago",
+      title: "Software Engineer",
+      type: "Full-Time",
+      level: "Senior Level",
+      salary: "$115/hr",
+      location: "Hyderabad, India"
+    },
+
+    {
+      id: 4,
+      company: "Apple",
+      logo: "A",
+      posted: "3 days ago",
+      title: "Product Designer",
+      type: "Full-Time",
+      level: "Mid Level",
+      salary: "$125/hr",
+      location: "Bangalore, India"
+    },
+
+    {
+      id: 5,
+      company: "Meta",
+      logo: "data:image/jpeg;base64,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",
+      posted: "4 days ago",
+      title: "React Developer",
+      type: "Full-Time",
+      level: "Senior Level",
+      salary: "$118/hr",
+      location: "Mumbai, India"
+    },
+
+    {
+      id: 6,
+      company: "Netflix",
+      logo: "N",
+      posted: "6 days ago",
+      title: "UI/UX Designer",
+      type: "Part-Time",
+      level: "Mid Level",
+      salary: "$105/hr",
+      location: "Remote, India"
+    },
+
+    {
+      id: 7,
+      company: "NVIDIA",
+      logo: "N",
+      posted: "2 days ago",
+      title: "Software Developer",
+      type: "Full-Time",
+      level: "Senior Level",
+      salary: "$130/hr",
+      location: "Pune, India"
+    },
+
+    {
+      id: 8,
+      company: "Adobe",
+      logo: "A",
+      posted: "3 days ago",
+      title: "Frontend Engineer",
+      type: "Full-Time",
+      level: "Mid Level",
+      salary: "$100/hr",
+      location: "Noida, India"
+    },
+
+    {
+      id: 9,
+      company: "IBM",
+      logo: "data:image/jpeg;base64,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",
+      posted: "1 day ago",
+      title: "Cloud Engineer",
+      type: "Full-Time",
+      level: "Senior Level",
+      salary: "$108/hr",
+      location: "Bangalore, India"
+    },
+
+    {
+      id: 10,
+      company: "Salesforce",
+      logo: "S",
+      posted: "5 days ago",
+      title: "Full Stack Developer",
+      type: "Full-Time",
+      level: "Mid Level",
+      salary: "$112/hr",
+      location: "Hyderabad, India"
+    }
+  ]
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    
+    <div className="jobs-container">
 
-      <div className="ticks"></div>
+      {jobs.map((job) => (
+        <Card
+          key={job.id}
+          job={job}
+          
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        />
+      ))}
+      
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+    </div>
+    
   )
 }
 
