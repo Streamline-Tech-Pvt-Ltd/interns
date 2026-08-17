@@ -1,90 +1,146 @@
-import React from 'react'
+import React from "react";
 
-const Card = ({ job }) => {
-
+function Card({ property }) {
   return (
-    <div className="job-card">
+    <div className="property-card">
 
-      {/* Header */}
+      <div className="property-image-wrapper">
 
-      <div className="job-card-header">
+        <img
+          src={property.image}
+          alt={property.title}
+          className="property-image"
+        />
 
-        <div className="company-logo">
+        <span className="property-badge pg">
+          PG
+        </span>
 
-          {job.logo.startsWith("data:image") ? (
-            <img
-              src={job.logo}
-              alt={job.company}
-            />
-          ) : (
-            <span>{job.logo}</span>
-          )}
-
-        </div>
-
-        <button className="save-btn">
-          Save
-          <span className="bookmark-icon">♡</span>
+        <button className="favorite-button">
+          ♡
         </button>
 
       </div>
 
 
-      {/* Job Information */}
+      <div className="property-content">
 
-      <div className="job-info">
+        <div className="owner">
 
-        <div className="company-name">
-          {job.company}
+          <img
+            src={property.ownerImage}
+            className="owner-image"
+            alt={property.owner}
+          />
 
-          <span className="posted-time">
-            {job.posted}
-          </span>
+          <div className="owner-info">
+
+            <span className="owner-name">
+              Owner: {property.owner}
+            </span>
+
+            <span className="owner-rating">
+              ★ {property.rating}
+            </span>
+
+          </div>
+
         </div>
 
-        <h2 className="job-title">
-          {job.title}
+
+        <div className="property-type">
+          {property.type}
+        </div>
+
+
+        <h2 className="property-title">
+          {property.title}
         </h2>
 
-        <div className="job-tags">
 
-          <span className="job-tag">
-            {job.type}
+        <div className="property-location">
+          📍 {property.location}
+        </div>
+
+
+        <div className="property-price">
+
+          <span className="price">
+            ₹{property.price}
           </span>
 
-          <span className="job-tag">
-            {job.level}
+          <span className="price-period">
+            / month
           </span>
 
         </div>
 
-      </div>
 
+        <div className="property-details">
 
-      {/* Footer */}
-
-      <div className="job-card-footer">
-
-        <div className="job-location">
-
-          <div className="salary">
-            {job.salary}
+          <div className="detail">
+            <strong>{property.beds}</strong>
+            Beds
           </div>
 
-          <div className="location">
-            {job.location}
+          <div className="detail">
+            <strong>{property.baths}</strong>
+            Baths
+          </div>
+
+          <div className="detail">
+            <strong>{property.area}</strong>
+            sq.ft
           </div>
 
         </div>
 
-        <button className="apply-btn">
-          Apply now
-        </button>
+
+        <div className="payment-section">
+
+          <div className="payment-title">
+            Payment Options
+          </div>
+
+          <div className="payment-options">
+
+            <span className="payment-option">
+              UPI
+            </span>
+
+            <span className="payment-option">
+              Card
+            </span>
+
+            <span className="payment-option">
+              Cash
+            </span>
+
+            <span className="payment-option">
+              Net Banking
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div className="card-actions">
+
+          <button className="view-button">
+            View Details
+          </button>
+
+          <button className="contact-button">
+            Contact Owner
+          </button>
+
+        </div>
 
       </div>
 
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;
