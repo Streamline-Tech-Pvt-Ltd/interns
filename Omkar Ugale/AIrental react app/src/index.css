@@ -1,363 +1,287 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 40px 20px;
-  background: #f5f5f5;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #222;
 }
 
-/* =========================
-   JOB CONTAINER
-========================= */
-
-.jobs-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 25px;
-}
-
-/* =========================
-   MAIN CARD
-========================= */
-
-.job-card {
-  width: 100%;
-  min-width: 0;
-  min-height: 500px;
-
+.app {
   padding: 30px;
+}
 
-  background: #ffffff;
-  border-radius: 30px;
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
 
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 
+/* CARD */
+
+.property-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* IMAGE */
+
+.property-image-wrapper {
+  position: relative;
+  height: 200px;
+}
+
+.property-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* PG BADGE */
+
+.property-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+
+  background: #4f46e5;
+  color: white;
+
+  padding: 5px 10px;
+  border-radius: 6px;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* FAVORITE */
+
+.favorite-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 35px;
+  height: 35px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: white;
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+/* CONTENT */
+
+.property-content {
+  padding: 16px;
+}
+
+/* OWNER */
+
+.owner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.owner-image {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.owner-info {
   display: flex;
   flex-direction: column;
 }
 
-/* =========================
-   HEADER
-========================= */
-
-.job-card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  gap: 15px;
-}
-
-/* =========================
-   COMPANY LOGO
-========================= */
-
-.company-logo {
-  width: 65px;
-  height: 65px;
-
-  flex-shrink: 0;
-
-  border: 2px solid #eeeeee;
-  border-radius: 50%;
-
-  overflow: hidden;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: #ffffff;
-}
-
-/* IMAGE LOGO */
-
-.company-logo img {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-  object-position: center;
-
-  display: block;
-}
-
-/* TEXT / EMOJI LOGO */
-
-.company-logo span {
-  width: 100%;
-  height: 100%;
-
-  border-radius: 50%;
-
-  background: #050505;
-  color: white;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 30px;
+.owner-name {
+  font-size: 13px;
   font-weight: bold;
-
-  font-family: Arial, sans-serif;
-
-  position: relative;
 }
 
-/* Amazon smile */
-
-.company-logo span::after {
-  content: "";
-
-  position: absolute;
-
-  width: 27px;
-  height: 8px;
-
-  border-bottom: 3px solid #ff9900;
-  border-radius: 50%;
-
-  bottom: 9px;
-  left: 50%;
-
-  transform: translateX(-50%);
+.owner-rating {
+  font-size: 12px;
+  color: #16a34a;
 }
 
-/* =========================
-   SAVE BUTTON
-========================= */
+/* TITLE */
 
-.save-btn {
-  background: #ffffff;
-
-  border: 1px solid #eeeeee;
-
-  padding: 9px 12px;
-
-  border-radius: 10px;
-
-  font-size: 14px;
-  color: #666666;
-
-  display: flex;
-  align-items: center;
-  gap: 6px;
-
-  cursor: pointer;
-
-  flex-shrink: 0;
+.property-type {
+  color: #4f46e5;
+  font-size: 12px;
+  font-weight: bold;
 }
 
-.bookmark-icon {
+.property-title {
   font-size: 19px;
+  margin: 5px 0;
 }
 
-/* =========================
-   JOB INFORMATION
-========================= */
-
-.job-info {
-  margin-top: 30px;
-}
-
-.company-name {
-  font-size: 18px;
-  font-weight: 600;
-  color: #222222;
-}
-
-.posted-time {
+.property-location {
+  color: #64748b;
   font-size: 14px;
-  font-weight: 400;
-  color: #999999;
-
-  margin-left: 5px;
 }
 
-.job-title {
-  margin: 14px 0 22px;
+/* PRICE */
 
-  font-size: 26px;
-  line-height: 1.2;
-
-  font-weight: 600;
-
-  color: #111111;
-
-  overflow-wrap: break-word;
+.property-price {
+  margin: 12px 0;
 }
 
-/* =========================
-   TAGS
-========================= */
+.price {
+  color: #4f46e5;
+  font-size: 22px;
+  font-weight: bold;
+}
 
-.job-tags {
+.price-period {
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* DETAILS */
+
+.property-details {
   display: flex;
-
   gap: 8px;
+}
 
+.detail {
+  flex: 1;
+  padding: 8px;
+
+  background: #f8fafc;
+  border-radius: 7px;
+
+  text-align: center;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.detail strong {
+  display: block;
+  color: #222;
+}
+
+/* PAYMENT */
+
+.payment-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}
+
+.payment-title {
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 7px;
+}
+
+.payment-options {
+  display: flex;
+  gap: 5px;
   flex-wrap: wrap;
 }
 
-.job-tag {
-  background: #f1f1f1;
+.payment-option {
+  padding: 4px 8px;
 
-  padding: 8px 12px;
+  background: #eef2ff;
+  color: #4f46e5;
 
-  border-radius: 8px;
+  border-radius: 5px;
 
-  font-size: 13px;
-  font-weight: 500;
-
-  color: #555555;
+  font-size: 11px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* BUTTONS */
 
-.job-card-footer {
-  margin-top: auto;
-
-  padding-top: 22px;
-
-  border-top: 1px solid #eeeeee;
-
+.card-actions {
   display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  gap: 15px;
+  gap: 8px;
+  margin-top: 15px;
 }
 
-/* =========================
-   SALARY
-========================= */
+.view-button,
+.contact-button {
+  flex: 1;
 
-.salary {
-  font-size: 23px;
+  padding: 10px;
 
-  font-weight: 600;
+  border-radius: 7px;
 
-  color: #111111;
-
-  margin-bottom: 5px;
-}
-
-.location {
-  font-size: 14px;
-  color: #999999;
-}
-
-/* =========================
-   APPLY BUTTON
-========================= */
-
-.apply-btn {
-  border: none;
-
-  background: #050505;
-
-  color: white;
-
-  padding: 12px 17px;
-
-  border-radius: 10px;
-
-  font-size: 14px;
-  font-weight: 500;
-
+  font-weight: bold;
   cursor: pointer;
-
-  transition: 0.2s ease;
-
-  flex-shrink: 0;
 }
 
-.apply-btn:hover {
-  background: #333333;
-
-  transform: translateY(-2px);
+.view-button {
+  background: white;
+  color: #4f46e5;
+  border: 1px solid #4f46e5;
 }
 
-/* =========================
-   TABLET
-========================= */
+.contact-button {
+  background: #4f46e5;
+  color: white;
+  border: 1px solid #4f46e5;
+}
 
-@media (max-width: 1000px) {
+/* HOVER */
 
-  body {
-    padding: 30px 20px;
-  }
+.property-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: 0.2s;
+}
 
-  .jobs-container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-  }
+/* RESPONSIVE */
 
-  .job-card {
-    padding: 28px;
+@media (max-width: 900px) {
+  .property-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 650px) {
-
-  body {
-    padding: 20px 15px;
-  }
-
-  .jobs-container {
+@media (max-width: 600px) {
+  .property-grid {
     grid-template-columns: 1fr;
-    gap: 18px;
   }
 
-  .job-card {
-    min-height: 450px;
-    padding: 25px;
-    border-radius: 25px;
+  .app {
+    padding: 15px;
   }
+}
+h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 10px;
+}
 
-  .company-logo {
-    width: 60px;
-    height: 60px;
-  }
+h1 span {
+  color: #4f46e5;
+}
 
-  .company-logo span {
-    font-size: 27px;
-  }
-
-  .job-info {
-    margin-top: 25px;
-  }
-
-  .job-title {
-    font-size: 24px;
-  }
-
-  .salary {
-    font-size: 21px;
-  }
-
-  .job-card-footer {
-    gap: 10px;
-  }
-
-  .apply-btn {
-    padding: 11px 14px;
-  }
+p {
+  font-size: 17px;
+  color: #64748b;
+  margin: 0 0 25px;
 }
