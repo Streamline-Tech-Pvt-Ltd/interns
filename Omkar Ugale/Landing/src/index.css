@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  background: #f4f7fb;
+}
+
+.page {
+  max-width: 1100px;
+  margin: auto;
+  background: white;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 70px;
+  padding: 0 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  color: #333;
+}
+
+.logo span {
+  color: #e52d3f;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #222;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links button,
+.join {
+  background: #e52d3f;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+/* Hero */
+
+.hero {
+  height: 350px;
+  background: #f9dfe1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-left: 55px;
+  overflow: hidden;
+}
+
+.hero-text {
+  z-index: 2;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  line-height: 1.05;
+  color: #222;
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.hire {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 4px;
+}
+
+.hero-image {
+  width: 52%;
+  height: 100%;
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero-image img {
+  height: 300px;
+  width: 250px;
+  object-fit: cover;
+  position:absolute;
+  z-index: 2;
+}
+
+.circle {
+  width: 210px;
+  height: 210px;
+
+  background: #ffb800;
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: 20px;
+  left: 45%;
+}
+
+/* Clients */
+
+.clients {
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  color: #c8cbd0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.clients span:nth-child(2),
+.clients span:nth-child(4),
+.clients span:nth-child(5) {
+  font-size: 15px;
+}
+
+@media (max-width: 700px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links a {
+    display: none;
+  }
+
+  .hero {
+    padding: 30px;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .clients {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+}
