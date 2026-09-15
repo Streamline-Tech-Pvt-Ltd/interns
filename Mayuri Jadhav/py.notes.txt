@@ -1,0 +1,119 @@
+Q1.What is Python?
+
+Python is a simple, high-level, interpreted, dynamically typed, general-purpose, object-oriented programming language.
+
+It is easy to learn and read because of its simple syntax. Python is used in various fields such as web development, data analysis, machine learning, artificial intelligence, automation, and software development.
+
+
+Q2.Difference Between Static and Dynamic?
+
+| Point                   | Static               | Dynamic           |
+| ----------------------- | -------------------- | --------------------------- |
+| 1. Data Type            | Declared explicitly  | Determined automatically    |
+| 2. Type Checking        | Done at compile time | Done at runtime             |
+| 3. Variable Declaration | Type is required     | Type is not required        |
+| 4. Flexibility          | Less flexible        | More flexible               |
+| 5. Errors               | Detected earlier     | Detected during execution   |
+| 6. Code Length          | Usually more code    | Usually less code           |
+| 7. Examples             | Java, C, C++         | Python, JavaScript          |
+| 8. Python               | Not static typed     | Python is dynamically typed |
+
+
+Q3.Explain Indentation in Python.
+
+Indentation means spaces or tabs at the beginning of a line to define a block of code.
+
+Python uses indentation instead of { } braces.
+
+Example:
+
+if 10 > 5:
+    print("10 is greater")
+
+Here, the spaces before print() are called indentation.
+
+
+
+Q4.Difference Between Compiler and Interpreter
+
+| Point              | Compiler                              | Interpreter                                   |
+| ------------------ | ------------------------------------- | --------------------------------------------- |
+| 1. Translation     | Translates the whole program at once  | Translates code line by line                  |
+| 2. Execution       | Executes after compilation            | Executes during translation                   |
+| 3. Error Detection | Shows errors after compiling          | Shows errors line by line                     |
+| 4. Speed           | Generally faster                      | Generally slower                              |
+| 5. Output          | Creates machine/object code           | Usually does not create separate machine code |
+| 6. Error Handling  | Multiple errors can be shown together | Stops when it finds an error                  |
+| 7. Examples        | C, C++                                | Python                                        |
+| 8. Process         | Compile → Run                         | Translate and Run simultaneously              |
+
+
+
+
+Q5.What is meant by Python is a High-Level Language?
+
+A high-level language is easy for humans to read, write, and understand.
+
+Python uses simple English-like syntax and hides complex hardware-level operations from the programmer.
+
+Example:
+
+print("Hello")
+
+
+Q6.What is OOP?
+
+OOP stands for Object-Oriented Programming. It is a programming approach based on objects and classes.
+
+The four main concepts of OOP are:
+
+Encapsulation
+2. Inheritance
+3. Polymorphism
+4. Abstraction
+
+
+
+Q7.Explain IDE and give an example.
+
+IDE stands for Integrated Development Environment.
+
+It is software that provides tools for writing, running, debugging, and managing code in one place.
+
+Examples:
+
+VS Code
+PyCharm
+Jupyter Notebook
+Spyder
+
+
+
+Q8. Explain various applications of Python.
+
+Python is used in:
+
+Data Analysis – Pandas, NumPy
+Machine Learning – Scikit-learn
+Artificial Intelligence
+Web Development – Django, Flask
+Automation
+Data Visualization – Matplotlib
+Web Scraping
+Desktop Applications
+Game Development
+
+
+
+Q9. Difference between High-Level and Low-Level Language?
+| Point                 | High-Level Language         | Low-Level Language               |
+| --------------------- | --------------------------- | -------------------------------- |
+| 1. Readability        | Easy to read and understand | Difficult to read and understand |
+| 2. Syntax             | Simple and human-friendly   | Complex and machine-oriented     |
+| 3. Programming        | Easier to write             | Difficult to write               |
+| 4. Hardware Knowledge | Not required much           | More hardware knowledge required |
+| 5. Portability        | More portable               | Less portable                    |
+| 6. Development Time   | Faster development          | Slower development               |
+| 7. Examples           | Python, Java                | Assembly, Machine Language       |
+| 8. Abstraction        | High level of abstraction   | Low level of abstraction         |
+
